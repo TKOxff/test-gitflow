@@ -45,8 +45,11 @@ $ git remote -v
 6. Push the changes in your local repository to GitHub.com.
 
 ```zsh
-$ git push -u origin main
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
+$ git push -u origin main
+
+# To push the current `develop` branch and set the remote as upstream, use
+$ git push --set-upstream origin develop
 ```
 
 **The source**
