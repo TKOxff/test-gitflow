@@ -78,6 +78,10 @@ To start feature branches, use:
 ```zsh
 git flow feature start <name> [<base>]
 
+# Summary of actions:
+# - A new branch 'feature/<name>' was created, based on 'develop'
+# - You are now on branch 'feature/<name>'
+
 # Without the git-flow
 git checkout develop
 git checkout -b feature_branch
@@ -127,6 +131,16 @@ git flow feature pull <remote> <name>
 
 ```zsh
 git flow release start <release> [<base>]
+
+# Summary of actions:
+# - A new branch 'release/0.2.0' was created, based on 'develop'
+# - You are now on branch 'release/0.2.0'
+
+# Follow-up actions:
+# - Bump the version number now!
+# - Start committing last-minute fixes in preparing your release
+# - When done, run:
+#     git flow release finish '0.2.0'
 
 # Without the git-flow
 git checkout develop
