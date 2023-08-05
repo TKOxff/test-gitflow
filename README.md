@@ -78,6 +78,10 @@ To start feature branches, use:
 ```zsh
 git flow feature start <name> [<base>]
 
+# Summary of actions:
+# - A new branch 'feature/<name>' was created, based on 'develop'
+# - You are now on branch 'feature/<name>'
+
 # Without the git-flow
 git checkout develop
 git checkout -b feature_branch
