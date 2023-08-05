@@ -56,12 +56,25 @@ https://docs.github.com/en/migrations/importing-source-code/using-the-command-li
 
 ## 2. git-flow
 
+https://github.com/nvie/gitflow
+
 ### Initialization
 
 To initialize a new repo with the basic branch structure, use:
 
 사용할 레포의 master/main 이름등을 맞춰줘야 한다.
 
+```zsh
+  git flow init
 ```
-git flow init
+
+### Creating feature branches
+
+To list/start/finish feature branches, use:
+
+```zsh
+  git flow feature start <name> [<base>]
+  git flow feature finish <name>
+
+  git flow feature
 ```
