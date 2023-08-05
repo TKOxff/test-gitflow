@@ -94,19 +94,28 @@ git checkout develop
 git merge feature_branch
 ```
 
+When done, open a `pull request` to your feature branch.
+
 ### Create a pull request
 
-When done, open a `pull request` to your feature branch.
+PR 생성은 Github등 웹GUI를 제공하는 플랫폼의 고유 기능?
 
 > 리모드에 PR을 생성한다.
 > 회사등 공동 작업이라면 feature finish하기 전에 PR부터 만들어야 한다.
 
+### To push a feature branch to the remote repository
+
 ```zsh
-  git flow feature publish <name>
+git flow feature publish <name>
+
+Summary of actions:
+- A new remote branch 'feature/<name>' was created
+- The local branch 'feature/<name>' was configured to track the remote branch
+- You are now on branch 'feature/<name>'
 ```
 
-To push/pull a feature branch to the remote repository, use:
+### To pull a feature branch to the remote repository, use:
 
 ```zsh
-    git flow feature pull <remote> <name>
+git flow feature pull <remote> <name>
 ```
