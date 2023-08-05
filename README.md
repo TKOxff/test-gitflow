@@ -107,6 +107,11 @@ PR 생성은 Github등 웹GUI를 제공하는 플랫폼의 고유 기능?
 
 ```zsh
 git flow feature publish <name>
+
+Summary of actions:
+- A new remote branch 'feature/<name>' was created
+- The local branch 'feature/<name>' was configured to track the remote branch
+- You are now on branch 'feature/<name>'
 ```
 
 ### To pull a feature branch to the remote repository, use:
