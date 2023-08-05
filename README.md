@@ -1,5 +1,5 @@
-README of test-gitflow
-======================
+test-gitflow
+============
 
 git-flow 라이브러리 사용 테스트
 
@@ -70,16 +70,36 @@ To initialize a new repo with the basic branch structure, use:
 
 ### Creating feature branches
 
-To list/start/finish feature branches, use:
+To start feature branches, use:
 
 ```zsh
-  git flow feature start <name> [<base>]
-  git flow feature finish <name>
+git flow feature start <name> [<base>]
 
-  git flow feature
+# Without the git-flow
+git checkout develop
+git checkout -b feature_branch
 ```
 
-When done, open a pull request to your feature branch.
+### Finishing a feature branch
+
+When you’re done with the development work on the feature, the next step is to merge the feature_branch into develop.
+
+> 이 명령은 로컬 브랜치를 머지하고 리모트에는 반영되지 않는다. 그리고 PR을 만들 수 없게된다?
+
+```zsh
+git flow feature finish feature_branch
+
+# Without the git-flow
+git checkout develop
+git merge feature_branch
+```
+
+### Create a pull request
+
+When done, open a `pull request` to your feature branch.
+
+> 리모드에 PR을 생성한다.
+> 회사등 공동 작업이라면 feature finish하기 전에 PR부터 만들어야 한다.
 
 ```zsh
   git flow feature publish <name>
