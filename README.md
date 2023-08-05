@@ -78,3 +78,15 @@ To list/start/finish feature branches, use:
 
   git flow feature
 ```
+
+When done, open a pull request to your feature branch.
+
+```zsh
+  git flow feature publish <name>
+```
+
+To push/pull a feature branch to the remote repository, use:
+
+```zsh
+    git flow feature pull <remote> <name>
+```
