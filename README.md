@@ -122,3 +122,23 @@ Summary of actions:
 ```zsh
 git flow feature pull <remote> <name>
 ```
+
+### To start release branches, use:
+
+```zsh
+git flow release start <release> [<base>]
+
+# Without the git-flow
+git checkout develop
+git checkout -b release/0.1.0
+```
+
+### To finish release branches, use:
+
+```zsh
+git flow release finish <release>
+
+# Without the git-flow
+git checkout main
+git merge release/0.1.0  
+```
